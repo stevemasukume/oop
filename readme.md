@@ -14,18 +14,35 @@ manual.
 - **labs:** Consolidated reference solutions for the practical exercises in Labs 1-10.
 - **libraryProject:** The Lab 11 Library Management System mini-project.
 
+## VS Code Java Configuration
+
+The workspace configures `labs`, `practicalAssignment` and `libraryProject` as
+separate Java source folders. This matches the package declarations used by
+the lab exercises and prevents package errors in the Problems panel.
+
 ## Compile and Run the Lab Exercises
 
+From the repository root:
+
 ```bash
-javac -d out LabExercises.java labs\LabExercises.java
+javac -d out labs\LabExercises.java labs\LabExercisesRunner.java
 java -cp out LabExercises
 ```
 
 ## Run an Individual Exercise from the Repository Root
 
 ```bash
-javac -d out lab01\Exercise1.java
+javac -d out labs\lab01\Exercise1.java
 java -cp out lab01.Exercise1
+```
+
+## Compile and Run the Bank Demo
+
+From the repository root:
+
+```bash
+javac -d out practicalAssignment\*.java
+java -cp out BankDemo
 ```
 
 ## Compile and Run the Library Demo
