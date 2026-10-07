@@ -1,6 +1,8 @@
 {
     "java.project.sourcePaths": [
-        "."
+        "labs",
+        "practicalAssignment",
+        "libraryProject"
     ],
     "java.project.outputPath": "out"
 }
